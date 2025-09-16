@@ -85,3 +85,6 @@ while True:
 
     elif action == "END":
         break
+
+    else:
+        print("Invalid input please try again.")
