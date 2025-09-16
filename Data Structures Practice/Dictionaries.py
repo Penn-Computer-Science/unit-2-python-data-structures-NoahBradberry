@@ -2,7 +2,7 @@ my_dictionary = {"United States" : "Washington D.C.", "Japan": "Tokyo", "United 
 print(my_dictionary["Japan"])
 print(my_dictionary["Mexico"])
 my_dictionary["France"] = "Paris"
-my_dictionary["United States"] = "Indianapolis"
+my_dictionary["United States"] = "New York"
 
 for l in my_dictionary:
     print(l)
