@@ -58,7 +58,7 @@ while True:
         averages = dict(reversed(list(averages.items())))
         for l in averages:
             print(l + ":" + str(gradebook[l]) + " Average: " + str(average(gradebook[l])) + " " + letter(average(gradebook[l])))
-        print("Top Student: " + max(averages))
+        print("Top Student: " + max(averages, key=averages.get))
 
     elif action == "REMOVE STUDENT":
         student = input("What student would you like to remove? ")
