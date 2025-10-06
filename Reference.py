@@ -41,3 +41,7 @@ print(pennData[pennData['GPA']>3.5])
 print("-_"*20)
 print("First Student Data") #Prints all the data for the first student in multiple lines instead of one.
 print(pennData.iloc[0])
+
+
+pennData.groupby('Year')['GPA'].mean().plot
+
