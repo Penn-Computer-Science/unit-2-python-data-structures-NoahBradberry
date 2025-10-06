@@ -43,5 +43,12 @@ print("First Student Data") #Prints all the data for the first student in multip
 print(pennData.iloc[0])
 
 
-pennData.groupby('Year')['GPA'].mean().plot
+pennData.groupby('Year')['GPA'].mean().plot(kind = 'bar')
+plt.title("Average GPA per Year")
+plt.xlabel("Year")
+plt.ylabel("Average GPA")
+#plt.show()
+
+df['GPA'].plot(kind = 'hist', bins = 5)
+plt.show
 
